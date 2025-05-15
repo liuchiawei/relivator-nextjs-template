@@ -15,7 +15,8 @@ import {
   CardTitle,
 } from "~/ui/primitives/card";
 
-import { categories, featuredProductsHomepage, testimonials } from "./mocks";
+import { featuredProductsHomepage, testimonials } from "./mocks";
+import text from "~/data/text.json";
 
 const featuresWhyChooseUs = [
   {
@@ -92,14 +93,15 @@ export default function HomePage() {
                       lg:leading-[1.1]
                     `}
                   >
-                    Your One-Stop Shop for{" "}
+                    {text.home.subtitle}
+                    <br />
                     <span
                       className={`
                         bg-gradient-to-r from-primary to-primary/70 bg-clip-text
                         text-transparent
                       `}
                     >
-                      Everything Tech
+                      {text.home.title}
                     </span>
                   </h1>
                   <p
@@ -108,8 +110,7 @@ export default function HomePage() {
                       md:text-xl
                     `}
                   >
-                    Discover premium products at competitive prices, with fast
-                    shipping and exceptional customer service.
+                    {text.home.description}
                   </p>
                 </div>
                 <div
@@ -220,17 +221,17 @@ export default function HomePage() {
                 md:grid-cols-4 md:gap-6
               `}
             >
-              {categories.map((category) => (
+              {text.categories.map((category) => (
                 <Link
-                  aria-label={`Browse ${category.name} products`}
+                  aria-label={`Browse ${category.name.en} products`}
                   className={`
                     group relative flex flex-col space-y-4 overflow-hidden
                     rounded-2xl border bg-card shadow transition-all
                     duration-300
                     hover:shadow-lg
                   `}
-                  href={`/products?category=${category.name.toLowerCase()}`}
-                  key={category.name}
+                  href={`/products?category=${category.name.en.toLowerCase()}`}
+                  key={category.name.en}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <div
@@ -240,7 +241,7 @@ export default function HomePage() {
                       `}
                     />
                     <Image
-                      alt={category.name}
+                      alt={category.name.en}
                       className={`
                         object-cover transition duration-300
                         group-hover:scale-105
@@ -252,10 +253,11 @@ export default function HomePage() {
                   </div>
                   <div className="relative z-20 -mt-6 p-4">
                     <div className="mb-1 text-lg font-medium">
-                      {category.name}
+                      {category.name.ja}
                     </div>
+
                     <p className="text-sm text-muted-foreground">
-                      {category.productCount} products
+                      {category.description.ja}
                     </p>
                   </div>
                 </Link>

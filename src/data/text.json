@@ -1,0 +1,61 @@
+{
+  "home": {
+    "subtitle": "格闘技用品専門",
+    "title": "Deep Fear",
+    "description": "格闘技用品のショップです。"
+  },
+  "categories": [
+    {
+      "name": {
+        "en": "Gloves",
+        "ja": "グローブ",
+        "zh": "拳套"
+      },
+      "description": {
+        "en": "Gloves are used to protect the hands and wrists during martial arts training and competitions.",
+        "ja": "グローブは格闘技のトレーニングや競技で手とひじを保護するために使用されます。",
+        "zh": "拳套是用於保護手和手腕在武術訓練和比賽中的用品。"
+      },
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "name": {
+        "en": "Shirts",
+        "ja": "シャツ",
+        "zh": "襯衫"
+      },
+      "description": {
+        "en": "Shirts are used to protect the body during martial arts training and competitions.",
+        "ja": "シャツは格闘技のトレーニングや競技で身体を保護するために使用されます。",
+        "zh": "襯衫是用於保護身體在武術訓練和比賽中的用品。"
+      },
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "name": {
+        "en": "Shorts",
+        "ja": "ショーツ",
+        "zh": "短褲"
+      },
+      "description": {
+        "en": "Shorts are used to protect the body during martial arts training and competitions.",
+        "ja": "ショーツは格闘技のトレーニングや競技で身体を保護するために使用されます。",
+        "zh": "短褲是用於保護身體在武術訓練和比賽中的用品。"
+      },
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "name": {
+        "en": "Headgear",
+        "ja": "ヘッドギア",
+        "zh": "頭盔"
+      },
+      "description": {
+        "en": "Headgear is used to protect the head during martial arts training and competitions.",
+        "ja": "ヘッドギアは格闘技のトレーニングや競技で頭部を保護するために使用されます。",
+        "zh": "頭盔是用於保護頭部在武術訓練和比賽中的用品。"
+      },
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    }
+  ]
+}
